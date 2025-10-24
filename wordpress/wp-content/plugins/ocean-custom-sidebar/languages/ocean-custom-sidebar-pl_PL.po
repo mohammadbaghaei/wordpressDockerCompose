@@ -1,0 +1,231 @@
+# Copyright (C) 2016 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ocean-custom-"
+"sidebar\n"
+"POT-Creation-Date: 2025-05-19T03:06:49+00:00\n"
+"PO-Revision-Date: 2018-04-10 15:48+0200\n"
+"Last-Translator: \n"
+"Language-Team: OceanWP\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _esc_attr__;esc_attr_x;esc_attr_e;esc_html__;"
+"esc_html_e;esc_html_x;__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Plugin Name of the plugin
+#: ocean-custom-sidebar.php
+#, fuzzy
+msgid "Ocean Custom Sidebar"
+msgstr "Lewy pasek boczny"
+
+#. Plugin URI of the plugin
+#: ocean-custom-sidebar.php
+msgid "https://oceanwp.org/extension/ocean-custom-sidebar/"
+msgstr ""
+
+#. Description of the plugin
+#: ocean-custom-sidebar.php
+msgid ""
+"Generates an unlimited number of sidebars and place them on any page you "
+"wish."
+msgstr ""
+
+#. Author of the plugin
+#: ocean-custom-sidebar.php
+msgid "OceanWP"
+msgstr ""
+
+#. Author URI of the plugin
+#: ocean-custom-sidebar.php
+msgid "https://oceanwp.org/"
+msgstr ""
+
+#: ocean-custom-sidebar.php:225 ocean-custom-sidebar.php:322
+#: ocean-custom-sidebar.php:323
+#, fuzzy
+msgid "Sidebars"
+msgstr "Pasek boczny"
+
+#: ocean-custom-sidebar.php:226
+msgid "Sidebar"
+msgstr "Pasek boczny"
+
+#: ocean-custom-sidebar.php:227
+#, fuzzy
+msgctxt "Admin menu name"
+msgid "Sidebars"
+msgstr "Pasek boczny"
+
+#: ocean-custom-sidebar.php:228
+#, fuzzy
+msgid "Search Sidebars"
+msgstr "Lewy pasek boczny"
+
+#: ocean-custom-sidebar.php:229
+#, fuzzy
+msgid "All Sidebars"
+msgstr "Pasek boczny"
+
+#: ocean-custom-sidebar.php:230
+#, fuzzy
+msgid "Parent Sidebar"
+msgstr "Lewy pasek boczny"
+
+#: ocean-custom-sidebar.php:231
+#, fuzzy
+msgid "Parent Sidebar:"
+msgstr "Lewy pasek boczny"
+
+#: ocean-custom-sidebar.php:232
+#, fuzzy
+msgid "Edit Sidebar"
+msgstr "Prawy pasek boczny"
+
+#: ocean-custom-sidebar.php:233
+#, fuzzy
+msgid "Update Sidebar"
+msgstr "Lewy pasek boczny"
+
+#: ocean-custom-sidebar.php:234
+#, fuzzy
+msgid "Add New Sidebar"
+msgstr "Brak paska bocznego"
+
+#: ocean-custom-sidebar.php:235
+#, fuzzy
+msgid "New Sidebar Name"
+msgstr "Brak paska bocznego"
+
+#: ocean-custom-sidebar.php:352
+msgid "ID"
+msgstr ""
+
+#: ocean-custom-sidebar.php:412
+msgid "The name of the widgets area"
+msgstr ""
+
+#: ocean-custom-sidebar.php:413
+msgid "The description of the widgets area (optional)"
+msgstr ""
+
+#~ msgid "Image Gallery"
+#~ msgstr "Galeria obrazu"
+
+#~ msgid "Remove image"
+#~ msgstr "Usuń obraz"
+
+#~ msgid "Add/Edit Images"
+#~ msgstr "Dodaj/edytuj obrazy"
+
+#~ msgid "Enable Lightbox for this gallery?"
+#~ msgstr "Włączyć Lightbox dla tej galerii?"
+
+#~ msgid "Add Images to Gallery"
+#~ msgstr "Dodaj obrazy do galerii"
+
+#~ msgid "Add to gallery"
+#~ msgstr "Dodaj do galerii"
+
+#~ msgid "Ocean Settings"
+#~ msgstr "Ustawienia OceanWP"
+
+#~ msgid "Other"
+#~ msgstr "Inne"
+
+#~ msgid "Upload"
+#~ msgstr "Załaduj"
+
+#~ msgid "Default"
+#~ msgstr "Domyślne"
+
+#~ msgid "Centered"
+#~ msgstr "Wyśrodkowane"
+
+#, fuzzy
+#~ msgid "Centered Minimal"
+#~ msgstr "Wyśrodkowane minimalne"
+
+#~ msgid "Background Image"
+#~ msgstr "Obraz tła"
+
+#~ msgid "Solid Color & White Text"
+#~ msgstr "Stały kolor i biały tekst"
+
+#~ msgid "Main"
+#~ msgstr "Główne"
+
+#~ msgid "Content Layout"
+#~ msgstr "Kompozycja treści"
+
+#~ msgid "Select your custom layout for this page or post content."
+#~ msgstr "Wybierz własną kompozycję dla tej strony lub treści wpisu."
+
+#~ msgid "Full Screen"
+#~ msgstr "Pełny ekran"
+
+#~ msgid "Select your a custom sidebar for this page or post."
+#~ msgstr "Wybierz własny pasek boczny dla tej strony lub wpisu."
+
+#~ msgid "Margins"
+#~ msgstr "Marginesy"
+
+#~ msgid "Enable or disable this element on this page or post."
+#~ msgstr "Włącz lub wyłącz ten element na stronie lub w wpisie."
+
+#~ msgid "Enable"
+#~ msgstr "Włącz"
+
+#~ msgid "Disable"
+#~ msgstr "Wyłącz"
+
+#~ msgid "Title"
+#~ msgstr "Tytuł"
+
+#~ msgid "Custom Title"
+#~ msgstr "Własny tytuł"
+
+#~ msgid "Subheading"
+#~ msgstr "Podtytuł"
+
+#~ msgid "Enter your page subheading. Shortcodes & HTML is allowed."
+#~ msgstr "Wpisz podtytuł strony. Kody i HTML są dozwolone."
+
+#~ msgid "Title Style"
+#~ msgstr "Styl tytułu"
+
+#~ msgid "Select a custom title style for this page or post."
+#~ msgstr "Wybierz własny styl tytułu dla tej strony lub wpisu."
+
+#~ msgid "Title: Background Color"
+#~ msgstr "Kolor tła tekstu"
+
+#~ msgid "Select a color."
+#~ msgstr "Wybierz kolor."
+
+#~ msgid "Title: Background Image"
+#~ msgstr "Grafika tła tytułu"
+
+#~ msgid "Select a custom header image for your main title."
+#~ msgstr "Wybierz własną grafikę nagłówka dla głównego tytułu."
+
+#~ msgid "Title: Background Height"
+#~ msgstr "Wysokość tła tytułu"
+
+#~ msgid ""
+#~ "Select your custom height for your title background. Default is 400px."
+#~ msgstr "Wybierz własną wysokość tła tytułu. Domyślna to 400px.   "
+
+#~ msgid "Audio/Video Format"
+#~ msgstr "Format audio/wideo"
