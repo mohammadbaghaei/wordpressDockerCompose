@@ -4,10 +4,10 @@ services:
     container_name: wordpress_db
     restart: unless-stopped
     environment:
-      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-      MARIADB_DATABASE: ${DB_NAME:-wordpress}
-      MARIADB_USER: ${DB_USER}
-      MARIADB_PASSWORD: ${DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: "Mbaghaei42"
+      MARIADB_DATABASE: "wordpress"
+      MARIADB_USER: "wpuser"
+      MARIADB_PASSWORD: "wppassword"
     volumes:
       - db_data:/var/lib/mysql
     networks:
@@ -45,12 +45,12 @@ services:
       redis:
         condition: service_healthy
     environment:
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: ${DB_USER}
-      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
-      WORDPRESS_DB_NAME: ${DB_NAME:-wordpress}
-      WORDPRESS_REDIS_HOST: redis
-      WORDPRESS_REDIS_PORT: 6379
+      WORDPRESS_DB_HOST: "db:3306"
+      WORDPRESS_DB_USER: "wpuser"
+      WORDPRESS_DB_PASSWORD: "wppassword"
+      WORDPRESS_DB_NAME: "wordpress"
+      WORDPRESS_REDIS_HOST: "redis"
+      WORDPRESS_REDIS_PORT: "6379"
     volumes:
       - wordpress_data:/var/www/html
     networks:
@@ -62,6 +62,7 @@ services:
     restart: unless-stopped
     depends_on:
       - wordpress
+    # برای تست لوکال این خط را uncomment کنید:
     # ports:
     #   - "8090:80"
     volumes:
@@ -72,13 +73,7 @@ services:
       - wordpress_network
     labels:
       - "coolify.managed=true"
-      # Coolify خودش این تنظیمات را مدیریت می‌کند:
-      # - SSL/TLS
-      # - Domain routing
-      # - Load balancing
 
-  # ⚠️ phpMyAdmin را فقط برای development نگه دارید
-  # برای production حذف کنید
   phpmyadmin:
     image: phpmyadmin:latest
     container_name: wordpress_phpmyadmin
@@ -86,15 +81,17 @@ services:
     depends_on:
       - db
     environment:
-      PMA_HOST: db
-      PMA_USER: root
-      PMA_PASSWORD: ${DB_ROOT_PASSWORD}
-      PMA_ARBITRARY: 1
+      PMA_HOST: "db"
+      PMA_USER: "root"
+      PMA_PASSWORD: "Mbaghaei42"
+      PMA_ARBITRARY: "1"
     networks:
       - wordpress_network
-    # ❌ پورت را expose نکنید - از Coolify tunnel استفاده کنید
+    # برای تست لوکال این خط را uncomment کنید:
+    # ports:
+    #   - "8091:80"
     profiles:
-      - development # فقط در حالت development اجرا شود
+      - development
 
 volumes:
   db_data:
