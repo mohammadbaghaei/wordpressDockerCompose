@@ -65,8 +65,8 @@ services:
     depends_on:
       - wordpress
     # برای تست لوکال این خط را uncomment کنید:
-    # ports:
-    #   - "8090:80"
+    ports:
+      - "80:80"
     volumes:
       - wordpress_data:/var/www/html:ro
       - nginx_cache:/var/cache/nginx
