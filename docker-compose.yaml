@@ -64,14 +64,28 @@ services:
     restart: unless-stopped
     depends_on:
       - wordpress
-    # برای تست لوکال این خط را uncomment کنید:
-    ports:
-      - "80:80"
+    # از expose به جای ports استفاده کنید
+    expose:
+      - "80"
     volumes:
       - wordpress_data:/var/www/html:ro
       - nginx_cache:/var/cache/nginx
     networks:
       - wordpress_network
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--quiet",
+          "--tries=1",
+          "--spider",
+          "http://localhost/health",
+        ]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+    # لیبل‌های Coolify - مهم‌ترین بخش!
     labels:
       - "coolify.managed=true"
 
@@ -86,11 +100,12 @@ services:
       PMA_USER: "root"
       PMA_PASSWORD: "Mbaghaei42"
       PMA_ARBITRARY: "1"
+    expose:
+      - "80"
     networks:
       - wordpress_network
-    # برای تست لوکال این خط را uncomment کنید:
-    # ports:
-    #   - "8091:80"
+    labels:
+      - "coolify.managed=true"
     profiles:
       - development
 
