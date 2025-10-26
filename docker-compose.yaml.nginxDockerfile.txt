@@ -57,7 +57,9 @@ services:
       - wordpress_network
 
   nginx:
-    image: nginx:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
     container_name: wordpress_nginx
     restart: unless-stopped
     depends_on:
@@ -67,7 +69,6 @@ services:
     #   - "8090:80"
     volumes:
       - wordpress_data:/var/www/html:ro
-      - ./conf.d:/etc/nginx/conf.d:ro
       - nginx_cache:/var/cache/nginx
     networks:
       - wordpress_network
